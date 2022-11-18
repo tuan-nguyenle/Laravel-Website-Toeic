@@ -39,18 +39,16 @@ class ExamController extends HomeController
     public function import($file, $pathImage, $pathAudio, $examID)
     {
         $exam = Excel::toArray(new QuestionImports, $file);
-        // dd($exam[0]);
-        array_filter($exam[0], function ($item) use ($pathImage, $pathAudio) {
-            // $item[10] = ;
+        array_filter($exam[0], function ($item) use ($pathImage, $pathAudio, $examID) {
+            $item[10] = $examID;
             if ($item[8] != null) {
                 $item[8] = $pathImage . "/" . $item[8];
             }
             if ($item[9] != null) {
                 $item[9] = $pathAudio . "/" . $item[9];
             }
-            $this->questionRepo->addQuestion($item);
+            $a = $this->questionRepo->addQuestion($item);
         });
-        // return back();
     }
 
     public function add(Request $request)
@@ -60,7 +58,6 @@ class ExamController extends HomeController
             'filesMedia' => 'required',
             'filesMedia.*' => 'mimes:png,jpg,mp3',
             'txtDescription' => 'required|max:250',
-            'fileExcel' => 'required',
             'fileExcel.*' => 'mimes:xlsx',
             'level' => 'required|integer|max:990|min:0'
         ]);
@@ -69,8 +66,9 @@ class ExamController extends HomeController
             'description' => $request->txtDescription,
             'level' => $request->level
         ];
+        // echo phpinfo();
         // check file Excel Exam 
-        if (Storage::exists('public/exam/' . $request->fileExcel->getClientOriginalName())) {
+        if (Storage::exists('public/exam/' . $request->file('fileExcel')->getClientOriginalName())) {
             return back()->with(
                 [
                     'status' => '0',
@@ -80,23 +78,24 @@ class ExamController extends HomeController
         }
         // add new Exam
         $newExam = $this->examRepo->addNewExam($data);
-        // save File Excel and File Image if not Exist in storage
-        Storage::putFileAs('public/exam', $request->fileExcel, $request->fileExcel->getClientOriginalName());
-        // get Path and ID from Newest Exam
+        // // save File Excel and File Image if not Exist in storage
+        Storage::putFileAs('public/exam', $request->file('fileExcel'), $request->file('fileExcel')->getClientOriginalName());
+        // // get Path and ID from Newest Exam
         $examID = $newExam->id;
-        $pathImage = 'public/exam/img/img_test_' . $examID;
-        $pathAudio = 'public/exam/img/img_test_' . $examID;
+        $pathImage = 'img/img_test_' . $examID;
+        $pathAudio = 'audio/audio_test_' . $examID;
+
         array_filter($request->file('filesMedia'), function ($item) use ($pathImage, $pathAudio) {
             if ($item->getMimeType() == 'image/png' | $item->getMimeType() == 'image/jpg' | $item->getMimeType() == 'image/jpeg') {
-                Storage::putFileAs($pathImage, $item, $item->getClientOriginalName());
+                Storage::putFileAs('public/exam/' . $pathImage, $item, $item->getClientOriginalName());
             }
             if ($item->getMimeType() == 'audio/mpeg') {
-                Storage::putFileAs($pathAudio, $item, $item->getClientOriginalName());
+                Storage::putFileAs('public/exam/' . $pathAudio, $item, $item->getClientOriginalName());
             }
         });
 
         // read file Excel and save new Question
-        $this->import($request->fileExcel, $pathImage, $pathAudio, $examID);
+        $this->import($request->file('fileExcel'), $pathImage, $pathAudio, $examID);
 
         return back()->with(
             [

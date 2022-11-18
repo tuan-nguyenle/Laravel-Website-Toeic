@@ -3,11 +3,6 @@
 @endphp
 @extends('layouts.admin.master-admin')
 @section('content')
-    <form action="{{ route('exam.import') }}" method="post" enctype="multipart/form-data">
-        @csrf
-        <input type="file" name="file">
-        <input type="submit">
-    </form>
     <a href="{{ route('exam.view-add') }}">Add New Exam</a>
     <table class="table table-hover">
         @csrf

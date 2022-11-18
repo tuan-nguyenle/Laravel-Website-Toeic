@@ -13,9 +13,18 @@ class QuestionsRepository implements InterfaceQuestionsRepository
 
     public function addQuestion($question)
     {
-        dd($question);
-        // return question::created([
-
-        // ]);
+        return question::create([
+            'number_for_exam' => $question[0],
+            'paragraph' => $question[1],
+            'question' => $question[2],
+            'option_1' => $question[3],
+            'option_2' => $question[4],
+            'option_3' => $question[5],
+            'option_4' => $question[6],
+            'correct_answer' => $question[7],
+            'image' => $question[8],
+            'audio' => $question[9],
+            'exam_id' => $question[10],
+        ]);
     }
 }

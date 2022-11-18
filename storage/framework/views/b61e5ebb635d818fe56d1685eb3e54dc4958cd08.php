@@ -204,7 +204,7 @@ unset($__errorArgs, $__bag); ?>
                 <label for="fileExcel" class="custom-file-upload" id="fileExcel-label">
                     File Excel
                 </label>
-                <input name="fileExcel" type="file" id="fileExcel" style="display: none;" required>
+                <input name="fileExcel" type="file" id="fileExcel" required style="display:none;">
             </div>
         </div>
         <div class="row mt-2">
@@ -271,15 +271,20 @@ unset($__errorArgs, $__bag); ?>
         });
 
         function validateFiles() {
+            var dataList = new DataTransfer();
             var filesMedia = document.getElementById('filesMedia');
             var filePath = filesMedia.value;
             var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif|\.mp3)$/i;
+            if (!filePath) {
+                files.filter(item => dataList.items.add(item));
+                filesMedia.files = dataList.files;
+                return false;
+            }
             if (!allowedExtensions.exec(filePath)) {
                 alert('Please upload file having extensions .jpeg/.jpg/.png/.gif/.mp3 only.');
                 return false;
             }
             Object.entries(filesMedia.files).filter(item => readFile(item[1]));
-            var dataList = new DataTransfer();
             files.filter(item => dataList.items.add(item));
             filesMedia.files = dataList.files;
         }

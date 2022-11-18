@@ -3,11 +3,6 @@
 ?>
 
 <?php $__env->startSection('content'); ?>
-    <form action="<?php echo e(route('exam.import')); ?>" method="post" enctype="multipart/form-data">
-        <?php echo csrf_field(); ?>
-        <input type="file" name="file">
-        <input type="submit">
-    </form>
     <a href="<?php echo e(route('exam.view-add')); ?>">Add New Exam</a>
     <table class="table table-hover">
         <?php echo csrf_field(); ?>

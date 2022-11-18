@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class question extends Model
 {
     use HasFactory;
+    protected $table = "question";
+    protected $primaryKey = 'id';
     protected $fillable = [
         'number_for_exam',
         'paragraph',
@@ -20,9 +22,10 @@ class question extends Model
         'image',
         'audio',
         'exam_id',
-        'created_at',
     ];
 
-    protected $table = "question";
-    protected $primaryKey = 'id';
+    public function exam()
+    {
+        return $this->belongsTo(Exam::class);
+    }
 }
