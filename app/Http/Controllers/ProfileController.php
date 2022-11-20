@@ -9,8 +9,13 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
 
-class ProfileController extends HomeController
+class ProfileController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function updatePassword(Request $request)
     {
         // Check Input
@@ -114,5 +119,15 @@ class ProfileController extends HomeController
             'address' => $request->txtAddress,
         ]);
         return back()->with("status", "Change Your Information Successfully !!");
+    }
+
+    public function changePassword()
+    {
+        return view('layouts.change-password');
+    }
+
+    public function changeInfomation()
+    {
+        return view('layouts.edit-profile');
     }
 }

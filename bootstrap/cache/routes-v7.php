@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Bqx1S8jJUFPGMETg',
+            '_route' => 'generated::J9OqrruULbjMXn2u',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::z1q1KV3AAC2PVViv',
+            '_route' => 'generated::5u7uAQ86OFocGsuD',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bpmwvgzrPfmt0kJD',
+            '_route' => 'generated::qDYPQsinkmkOLptL',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::lKZ9zPgpqjneBDtX',
+            '_route' => 'generated::nCaVlyaSGsVV00Vh',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ZaYgJYjK5ZJaMgnp',
+            '_route' => 'generated::irL9FE0K359Pooml',
           ),
           1 => NULL,
           2 => 
@@ -1050,7 +1050,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Bqx1S8jJUFPGMETg' => 
+    'generated::J9OqrruULbjMXn2u' => 
     array (
       'methods' => 
       array (
@@ -1073,7 +1073,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Bqx1S8jJUFPGMETg',
+        'as' => 'generated::J9OqrruULbjMXn2u',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1089,7 +1089,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::z1q1KV3AAC2PVViv' => 
+    'generated::5u7uAQ86OFocGsuD' => 
     array (
       'methods' => 
       array (
@@ -1111,7 +1111,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::z1q1KV3AAC2PVViv',
+        'as' => 'generated::5u7uAQ86OFocGsuD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1164,7 +1164,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bpmwvgzrPfmt0kJD' => 
+    'generated::qDYPQsinkmkOLptL' => 
     array (
       'methods' => 
       array (
@@ -1184,7 +1184,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bpmwvgzrPfmt0kJD',
+        'as' => 'generated::qDYPQsinkmkOLptL',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1273,7 +1273,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::lKZ9zPgpqjneBDtX' => 
+    'generated::nCaVlyaSGsVV00Vh' => 
     array (
       'methods' => 
       array (
@@ -1293,7 +1293,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::lKZ9zPgpqjneBDtX',
+        'as' => 'generated::nCaVlyaSGsVV00Vh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1492,7 +1492,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ZaYgJYjK5ZJaMgnp' => 
+    'generated::irL9FE0K359Pooml' => 
     array (
       'methods' => 
       array (
@@ -1512,7 +1512,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ZaYgJYjK5ZJaMgnp',
+        'as' => 'generated::irL9FE0K359Pooml',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1542,8 +1542,8 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\HomeController@dashboard',
-        'controller' => 'App\\Http\\Controllers\\HomeController@dashboard',
+        'uses' => 'App\\Http\\Controllers\\AdminController@dashboard',
+        'controller' => 'App\\Http\\Controllers\\AdminController@dashboard',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -1579,8 +1579,8 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\HomeController@changeInfomation',
-        'controller' => 'App\\Http\\Controllers\\HomeController@changeInfomation',
+        'uses' => 'App\\Http\\Controllers\\ProfileController@changeInfomation',
+        'controller' => 'App\\Http\\Controllers\\ProfileController@changeInfomation',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -1688,8 +1688,8 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\HomeController@changePassword',
-        'controller' => 'App\\Http\\Controllers\\HomeController@changePassword',
+        'uses' => 'App\\Http\\Controllers\\ProfileController@changePassword',
+        'controller' => 'App\\Http\\Controllers\\ProfileController@changePassword',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -1908,8 +1908,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Role\\RoleController@index',
         'controller' => 'App\\Http\\Controllers\\Role\\RoleController@index',
@@ -1946,8 +1944,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Role\\RoleController@add',
         'controller' => 'App\\Http\\Controllers\\Role\\RoleController@add',
@@ -1984,8 +1980,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Role\\RoleController@delete',
         'controller' => 'App\\Http\\Controllers\\Role\\RoleController@delete',
@@ -2022,8 +2016,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Role\\RoleController@update',
         'controller' => 'App\\Http\\Controllers\\Role\\RoleController@update',
@@ -2061,8 +2053,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\User\\UserController@index',
         'controller' => 'App\\Http\\Controllers\\User\\UserController@index',
@@ -2100,8 +2090,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\User\\UserController@view',
         'controller' => 'App\\Http\\Controllers\\User\\UserController@view',
@@ -2138,8 +2126,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\User\\UserController@add',
         'controller' => 'App\\Http\\Controllers\\User\\UserController@add',
@@ -2176,8 +2162,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\User\\UserController@delete',
         'controller' => 'App\\Http\\Controllers\\User\\UserController@delete',
@@ -2214,8 +2198,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\User\\UserController@update',
         'controller' => 'App\\Http\\Controllers\\User\\UserController@update',
@@ -2253,8 +2235,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\News\\NewsController@index',
         'controller' => 'App\\Http\\Controllers\\News\\NewsController@index',
@@ -2292,8 +2272,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\News\\NewsController@view',
         'controller' => 'App\\Http\\Controllers\\News\\NewsController@view',
@@ -2330,8 +2308,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\News\\NewsController@add',
         'controller' => 'App\\Http\\Controllers\\News\\NewsController@add',
@@ -2369,8 +2345,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Exam\\ExamController@index',
         'controller' => 'App\\Http\\Controllers\\Exam\\ExamController@index',
@@ -2408,8 +2382,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Exam\\ExamController@view',
         'controller' => 'App\\Http\\Controllers\\Exam\\ExamController@view',
@@ -2446,8 +2418,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Exam\\ExamController@import',
         'controller' => 'App\\Http\\Controllers\\Exam\\ExamController@import',
@@ -2484,8 +2454,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Exam\\ExamController@add',
         'controller' => 'App\\Http\\Controllers\\Exam\\ExamController@add',
@@ -2523,8 +2491,6 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'auth',
-          2 => 'role:Admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Exam\\ExamController@viewAddExam',
         'controller' => 'App\\Http\\Controllers\\Exam\\ExamController@viewAddExam',

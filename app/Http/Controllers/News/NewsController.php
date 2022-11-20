@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\News;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\AdminController;
 use App\Repository\InterfaceNewsRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class NewsController extends Controller
+class NewsController extends AdminController
 {
     protected $newsRepo;
     public function __construct(InterfaceNewsRepository $newRepository)

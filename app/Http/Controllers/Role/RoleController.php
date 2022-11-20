@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Role;
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use App\Models\Role;
 use Illuminate\Http\Request;
 
-class RoleController extends HomeController
+class RoleController extends AdminController
 {
     public function index()
     {

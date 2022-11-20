@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Exam;
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use App\Imports\QuestionImports;
 use App\Repository\InterfaceExamsRepository;
 use App\Repository\InterfaceQuestionsRepository;
@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Maatwebsite\Excel\Facades\Excel;
 
-class ExamController extends HomeController
+class ExamController extends AdminController
 {
     protected $examRepo;
     protected $questionRepo;

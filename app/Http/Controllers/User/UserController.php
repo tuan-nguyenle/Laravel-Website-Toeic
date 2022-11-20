@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use App\Models\ListUser;
 use App\Repository\InterfaceRoleRepository;
 use App\Repository\InterfaceUserRepository as RepositoryInterfaceUserRepository;
 use Illuminate\Http\Request;
 
-class UserController extends HomeController
+class UserController extends AdminController
 {
     protected $userRepo;
     protected $roleRepo;

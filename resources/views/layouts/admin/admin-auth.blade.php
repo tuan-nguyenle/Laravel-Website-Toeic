@@ -13,7 +13,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-32x32.png') }}">
     <!-- Custom CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="{{ asset('mdb5/css/all.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('mdb5/css/mdb.min.css') }}" rel="stylesheet" />
     @yield('css')
 </head>

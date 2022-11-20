@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Models\News;
+use Illuminate\Support\Str;
 
 class NewsRepository implements InterfaceNewsRepository
 {
@@ -18,7 +19,7 @@ class NewsRepository implements InterfaceNewsRepository
     {
         return News::create([
             'title' => $data['title'],
-            'href_param' => strtolower($data['title']),
+            'href_param' => Str::slug($data['title'], '-'),
             'thumbnail' => $pathThumbnail,
             'content' => $data['content'],
             'user_id' => $data['user_id'],
@@ -30,7 +31,7 @@ class NewsRepository implements InterfaceNewsRepository
         $news = $this->getNewsById($data['id']);
         return $news->update([
             'title' => $data['title'],
-            'href_param' => strtolower($data['title']),
+            'href_param' => Str::slug($data['title'], '-'),
             'content' => $data['content'],
             'user_id' => $data['user_id'],
             'is_active' => $data['status'],

@@ -24,15 +24,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/dashboard', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard');
 
 // Change Information
-Route::get('/change-infomation', [App\Http\Controllers\HomeController::class, 'changeInfomation'])->name('change-infomation');
+Route::get('/change-infomation', [App\Http\Controllers\ProfileController::class, 'changeInfomation'])->name('change-infomation');
 Route::post('/update-infomation', [App\Http\Controllers\ProfileController::class, 'updateInfomation'])->name('update-infomation');
 Route::post('/update-avatar', [App\Http\Controllers\ProfileController::class, 'updateAvatar'])->name('update-avatar');
 
 // Change Password
-Route::get('/change-password', [App\Http\Controllers\HomeController::class, 'changePassword'])->name('change-password');
+Route::get('/change-password', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('change-password');
 Route::post('/update-password', [App\Http\Controllers\ProfileController::class, 'updatePassword'])->name('update-password');
 
 // method Login
@@ -47,7 +47,7 @@ Route::prefix('facebook')->name('facebook.')->group(function () {
 });
 
 // Role Management
-Route::controller(RoleController::class)->prefix('admin/role')->middleware('auth', 'role:Admin')->group(function () {
+Route::controller(RoleController::class)->prefix('admin/role')->group(function () {
     Route::get('/index', 'index')->name('role.index');
     Route::post('/add', 'add')->name('role.add');
     Route::post('/delete', 'delete')->name('role.delete');
@@ -55,7 +55,7 @@ Route::controller(RoleController::class)->prefix('admin/role')->middleware('auth
 });
 
 // User Management
-Route::controller(UserController::class)->prefix('admin/user')->middleware('auth', 'role:Admin')->group(function () {
+Route::controller(UserController::class)->prefix('admin/user')->group(function () {
     Route::get('/index', 'index')->name('user.index');
     Route::get('/view/{id}', 'view')->name('user.view');
     Route::post('/add', 'add')->name('user.add');
@@ -64,7 +64,7 @@ Route::controller(UserController::class)->prefix('admin/user')->middleware('auth
 });
 
 // News Management
-Route::controller(NewsController::class)->prefix('admin/news')->middleware('auth', 'role:Admin')->group(function () {
+Route::controller(NewsController::class)->prefix('admin/news')->group(function () {
     Route::get('/index', 'index')->name('news.index');
     Route::get('/view/{id?}', 'view')->name('news.view');
     Route::post('/add', 'add')->name('news.add');
@@ -74,7 +74,7 @@ Route::controller(NewsController::class)->prefix('admin/news')->middleware('auth
 
 
 // Exam Management
-Route::controller(ExamController::class)->prefix('admin/exam')->middleware('auth', 'role:Admin')->group(function () {
+Route::controller(ExamController::class)->prefix('admin/exam')->group(function () {
     Route::get('/index', 'index')->name('exam.index');
     Route::get('/view/{id}', 'view')->name('exam.view');
     Route::post('/import', 'import')->name('exam.import');
