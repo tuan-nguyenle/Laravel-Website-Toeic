@@ -3,10 +3,12 @@
 use App\Http\Controllers\Exam\ExamController;
 use App\Http\Controllers\FacebookAuthController;
 use App\Http\Controllers\GoogleAuthController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\News\NewsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Role\RoleController;
+use App\Http\Controllers\SlideBanner\SlideBannerController;
 use App\Http\Controllers\User\UserController;
 
 /*
@@ -72,6 +74,13 @@ Route::controller(NewsController::class)->prefix('admin/news')->group(function (
     // Route::post('/update/{id}', 'update')->name('user.update');
 });
 
+// Banner Management
+Route::controller(SlideBannerController::class)->prefix('admin/slide_banner')->group(function () {
+    Route::get('/index', 'index')->name('slide_banner.index');
+    Route::post('/update', 'update')->name('slide_banner.update');
+    Route::post('/add', 'add')->name('slide_banner.add');
+    // Route::post('/update/{id}', 'update')->name('user.update');
+});
 
 // Exam Management
 Route::controller(ExamController::class)->prefix('admin/exam')->group(function () {
@@ -81,6 +90,16 @@ Route::controller(ExamController::class)->prefix('admin/exam')->group(function (
     Route::post('/add', 'add')->name('exam.add');
     Route::get('/view-add', 'viewAddExam')->name('exam.view-add');
 });
+
+// client layout
+Route::get('/english-for-future', [App\Http\Controllers\HomeController::class, 'HomePage'])->name('home');
+
+// Route::get('/home', 'HomePage')->name('client.home');
+// Route::controller(HomeController::class)->prefix('layout/client')->group(function () {
+//     // Route::post('/update', 'update')->name('client.update');
+//     // Route::post('/add', 'add')->name('client.add');
+//     // Route::post('/update/{id}', 'update')->name('user.update');
+// });
 
 // Route::get('/send-email', function () {
 //     $mailData = [

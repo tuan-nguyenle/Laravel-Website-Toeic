@@ -1,5 +1,5 @@
 <?php
-$title = 'Edit User';
+    $title = 'Edit User';
 ?>
 
 <?php $__env->startSection('content'); ?>

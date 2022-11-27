@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="English 4 Future">
@@ -14,7 +15,7 @@
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-32x32.png') }}">
     <!-- Custom CSS -->
     <link href="{{ asset('themes/admin/css/style.min.css') }}" rel="stylesheet">
-        <!-- All Jquery -->
+    <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="{{ asset('themes/admin/libs/jquery/dist/jquery.min.js') }}"></script>
     <!-- Bootstrap tether Core JavaScript -->
@@ -126,11 +127,15 @@
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="{{ route('user.index') }}" aria-expanded="false"><i
-                                    class="mdi mdi-view-dashboard"></i><span class="hide-menu">User
+                                    class="mdi mdi-account-multiple-outline"></i><span class="hide-menu">User
                                     Management</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="{{ route('role.index') }}" aria-expanded="false"><i
                                     class="mdi mdi-face"></i><span class="hide-menu">Role Management</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="{{ route('slide_banner.index') }}" aria-expanded="false"><i
+                                    class="mdi mdi-view-dashboard"></i><span class="hide-menu">Home Slides
+                                    Banner</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="{{ route('news.index') }}" aria-expanded="false"><i
                                     class="mdi mdi-newspaper"></i><span class="hide-menu">News

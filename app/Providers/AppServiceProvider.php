@@ -28,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(InterfaceNewsRepository::class, NewsRepository::class);
         $this->app->bind(InterfaceExamsRepository::class, ExamsRepository::class);
         $this->app->bind(InterfaceQuestionsRepository::class, QuestionsRepository::class);
+        $this->app->bind(InterfaceSlideBannerRepository::class, SlideBannerRepository::class);
     }
 
     /**

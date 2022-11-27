@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::J9OqrruULbjMXn2u',
+            '_route' => 'generated::92QIFu4y9gRdhZbN',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5u7uAQ86OFocGsuD',
+            '_route' => 'generated::1AiDtnwqQopzgaf2',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::qDYPQsinkmkOLptL',
+            '_route' => 'generated::E6QxplBwnNeyMUYw',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nCaVlyaSGsVV00Vh',
+            '_route' => 'generated::2ICHkm3XnnbYcVzS',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::irL9FE0K359Pooml',
+            '_route' => 'generated::aepyNzYIOCHFeoer',
           ),
           1 => NULL,
           2 => 
@@ -689,6 +689,64 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/slide_banner/index' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slide_banner.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/slide_banner/update' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slide_banner.update',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/slide_banner/add' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slide_banner.add',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/admin/exam/index' => 
       array (
         0 => 
@@ -754,6 +812,26 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'exam.view-add',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/english-for-future' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'home',
           ),
           1 => NULL,
           2 => 
@@ -1050,7 +1128,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::J9OqrruULbjMXn2u' => 
+    'generated::92QIFu4y9gRdhZbN' => 
     array (
       'methods' => 
       array (
@@ -1067,13 +1145,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003320000000000000000";}";s:4:"hash";s:44:"dHFgDuIVpcczN7WqGQhOh7wGaIkT/s5E1QA5vL16LFw=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003340000000000000000";}";s:4:"hash";s:44:"o8f1Zo8BkvZWC/WX3U0BqP9JuIXIPvBB2kaR3BKWjKI=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::J9OqrruULbjMXn2u',
+        'as' => 'generated::92QIFu4y9gRdhZbN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1089,7 +1167,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5u7uAQ86OFocGsuD' => 
+    'generated::1AiDtnwqQopzgaf2' => 
     array (
       'methods' => 
       array (
@@ -1105,13 +1183,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003340000000000000000";}";s:4:"hash";s:44:"NF8pp66I/FwNHZA8dAO3gC4dfxidDDCBY4D8Dzpa9W8=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003360000000000000000";}";s:4:"hash";s:44:"8cKrXcYDiKRpBIxzLOsgZ4pnhjxZmRva659KJXU5tP8=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::5u7uAQ86OFocGsuD',
+        'as' => 'generated::1AiDtnwqQopzgaf2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1164,7 +1242,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::qDYPQsinkmkOLptL' => 
+    'generated::E6QxplBwnNeyMUYw' => 
     array (
       'methods' => 
       array (
@@ -1184,7 +1262,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::qDYPQsinkmkOLptL',
+        'as' => 'generated::E6QxplBwnNeyMUYw',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1273,7 +1351,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nCaVlyaSGsVV00Vh' => 
+    'generated::2ICHkm3XnnbYcVzS' => 
     array (
       'methods' => 
       array (
@@ -1293,7 +1371,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::nCaVlyaSGsVV00Vh',
+        'as' => 'generated::2ICHkm3XnnbYcVzS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1492,7 +1570,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::irL9FE0K359Pooml' => 
+    'generated::aepyNzYIOCHFeoer' => 
     array (
       'methods' => 
       array (
@@ -1512,7 +1590,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::irL9FE0K359Pooml',
+        'as' => 'generated::aepyNzYIOCHFeoer',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2332,6 +2410,115 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'slide_banner.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/slide_banner/index',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@index',
+        'controller' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@index',
+        'namespace' => NULL,
+        'prefix' => 'admin/slide_banner',
+        'where' => 
+        array (
+        ),
+        'as' => 'slide_banner.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'slide_banner.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/slide_banner/update',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@update',
+        'controller' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@update',
+        'namespace' => NULL,
+        'prefix' => 'admin/slide_banner',
+        'where' => 
+        array (
+        ),
+        'as' => 'slide_banner.update',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'slide_banner.add' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/slide_banner/add',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@add',
+        'controller' => 'App\\Http\\Controllers\\SlideBanner\\SlideBannerController@add',
+        'namespace' => NULL,
+        'prefix' => 'admin/slide_banner',
+        'where' => 
+        array (
+        ),
+        'as' => 'slide_banner.add',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'exam.index' => 
     array (
       'methods' => 
@@ -2500,6 +2687,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'exam.view-add',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'home' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'english-for-future',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@HomePage',
+        'controller' => 'App\\Http\\Controllers\\HomeController@HomePage',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'home',
       ),
       'fallback' => false,
       'defaults' => 
