@@ -45,4 +45,19 @@ class NewsRepository implements InterfaceNewsRepository
             'thumbnail' => $pathThumbnail,
         ]);
     }
+
+    public function getAllNewsActive()
+    {
+        return News::where('is_active', 1)->paginate(10);
+    }
+
+    public function getNewsBySlug($slug)
+    {
+        // dd($slug);
+        return News::all()->filter(function ($news) use ($slug) {
+            if ($news->is_active == 1 && $news->href_param == $slug) {
+                return $news;
+            }
+        })->first();
+    }
 }

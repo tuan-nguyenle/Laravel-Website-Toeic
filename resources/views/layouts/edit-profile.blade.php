@@ -1,16 +1,11 @@
 @php
-$title = 'Edit Profile';
+    $title = 'Edit Profile';
 @endphp
 
-@extends('layouts.app')
+@extends('client.layout.master-layout')
 
 @section('css')
     <style>
-        body {
-            background: #f5f5f5;
-            margin-top: 20px;
-        }
-
         .ui-w-80 {
             width: 80px !important;
             height: auto;
@@ -162,7 +157,8 @@ $title = 'Edit Profile';
     </style>
 @stop
 @section('content')
-    <div class="container light-style flex-grow-1 container-p-y">
+    <div class="container light-style flex-grow-1 container-p-y mt-3 mb-3"
+        style="box-shadow: 0px 0px 10px #444444;border-radius: 5px">
         <div class="card overflow-hidden">
             <div class="row no-gutters row-bordered row-border-light">
                 <div class="col-md-3 pt-0">

@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::92QIFu4y9gRdhZbN',
+            '_route' => 'generated::QGNTZdXgy6kNKjsB',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::1AiDtnwqQopzgaf2',
+            '_route' => 'generated::y7T45hf8thelZXt9',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::E6QxplBwnNeyMUYw',
+            '_route' => 'generated::wtcjndpL29EVNqYX',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2ICHkm3XnnbYcVzS',
+            '_route' => 'generated::OMJ7zxCvdCvUpoD1',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aepyNzYIOCHFeoer',
+            '_route' => 'generated::iBvzoqjXB1cXwEKA',
           ),
           1 => NULL,
           2 => 
@@ -845,10 +845,50 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/about-us' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'about-us',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/news' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'news',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148)))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148))|/news/([^/]++)(*:171))/?$}sDu',
     ),
     3 => 
     array (
@@ -955,6 +995,29 @@ app('router')->setCompiledRoutes(
           1 => 
           array (
             0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      171 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'news.slug',
+          ),
+          1 => 
+          array (
+            0 => 'slug',
           ),
           2 => 
           array (
@@ -1128,7 +1191,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::92QIFu4y9gRdhZbN' => 
+    'generated::QGNTZdXgy6kNKjsB' => 
     array (
       'methods' => 
       array (
@@ -1151,7 +1214,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::92QIFu4y9gRdhZbN',
+        'as' => 'generated::QGNTZdXgy6kNKjsB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1167,7 +1230,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::1AiDtnwqQopzgaf2' => 
+    'generated::y7T45hf8thelZXt9' => 
     array (
       'methods' => 
       array (
@@ -1189,7 +1252,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::1AiDtnwqQopzgaf2',
+        'as' => 'generated::y7T45hf8thelZXt9',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1242,7 +1305,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::E6QxplBwnNeyMUYw' => 
+    'generated::wtcjndpL29EVNqYX' => 
     array (
       'methods' => 
       array (
@@ -1262,7 +1325,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::E6QxplBwnNeyMUYw',
+        'as' => 'generated::wtcjndpL29EVNqYX',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1351,7 +1414,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2ICHkm3XnnbYcVzS' => 
+    'generated::OMJ7zxCvdCvUpoD1' => 
     array (
       'methods' => 
       array (
@@ -1371,7 +1434,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2ICHkm3XnnbYcVzS',
+        'as' => 'generated::OMJ7zxCvdCvUpoD1',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1570,7 +1633,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aepyNzYIOCHFeoer' => 
+    'generated::iBvzoqjXB1cXwEKA' => 
     array (
       'methods' => 
       array (
@@ -1590,7 +1653,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::aepyNzYIOCHFeoer',
+        'as' => 'generated::iBvzoqjXB1cXwEKA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2724,6 +2787,117 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'home',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'about-us' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'about-us',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@AboutUs',
+        'controller' => 'App\\Http\\Controllers\\HomeController@AboutUs',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'about-us',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'news' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'news',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@ListNews',
+        'controller' => 'App\\Http\\Controllers\\HomeController@ListNews',
+        'namespace' => NULL,
+        'prefix' => 'news',
+        'where' => 
+        array (
+        ),
+        'as' => 'news',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'news.slug' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'news/{slug}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@viewNewsDetail',
+        'controller' => 'App\\Http\\Controllers\\HomeController@viewNewsDetail',
+        'namespace' => NULL,
+        'prefix' => 'news',
+        'where' => 
+        array (
+        ),
+        'as' => 'news.slug',
       ),
       'fallback' => false,
       'defaults' => 

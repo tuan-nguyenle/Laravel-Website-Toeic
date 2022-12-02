@@ -10,6 +10,10 @@ class SlideBannerRepository implements InterfaceSlideBannerRepository
     {
         return Slide_banner_homepage::all();
     }
+    public function getAllBannerActive()
+    {
+        return Slide_banner_homepage::all()->where('status', '1');
+    }
     public function getBannerById($id)
     {
         return Slide_banner_homepage::all()->where('id', $id)->first();

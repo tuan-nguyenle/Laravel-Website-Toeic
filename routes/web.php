@@ -93,8 +93,12 @@ Route::controller(ExamController::class)->prefix('admin/exam')->group(function (
 
 // client layout
 Route::get('/english-for-future', [App\Http\Controllers\HomeController::class, 'HomePage'])->name('home');
-
-// Route::get('/home', 'HomePage')->name('client.home');
+Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'AboutUs'])->name('about-us');
+// news layout
+Route::controller(HomeController::class)->prefix('news')->group(function () {
+    Route::get('/', 'ListNews')->name('news');
+    Route::get('/{slug}', 'viewNewsDetail')->name('news.slug');
+});
 // Route::controller(HomeController::class)->prefix('layout/client')->group(function () {
 //     // Route::post('/update', 'update')->name('client.update');
 //     // Route::post('/add', 'add')->name('client.add');

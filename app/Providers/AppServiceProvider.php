@@ -12,6 +12,7 @@ use App\Repository\RoleRepository;
 use App\Repository\UserRepository;
 use App\Repository\ExamsRepository;
 use App\Repository\QuestionsRepository;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -38,6 +39,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Paginator::useBootstrap();
     }
 }

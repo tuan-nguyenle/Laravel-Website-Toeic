@@ -1,16 +1,11 @@
 <?php
-$title = 'Edit Profile';
+    $title = 'Edit Profile';
 ?>
 
 
 
 <?php $__env->startSection('css'); ?>
     <style>
-        body {
-            background: #f5f5f5;
-            margin-top: 20px;
-        }
-
         .ui-w-80 {
             width: 80px !important;
             height: auto;
@@ -162,7 +157,8 @@ $title = 'Edit Profile';
     </style>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
-    <div class="container light-style flex-grow-1 container-p-y">
+    <div class="container light-style flex-grow-1 container-p-y mt-3 mb-3"
+        style="box-shadow: 0px 0px 10px #444444;border-radius: 5px">
         <div class="card overflow-hidden">
             <div class="row no-gutters row-bordered row-border-light">
                 <div class="col-md-3 pt-0">
@@ -382,4 +378,4 @@ unset($__errorArgs, $__bag); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views/layouts/edit-profile.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('client.layout.master-layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views/layouts/edit-profile.blade.php ENDPATH**/ ?>
