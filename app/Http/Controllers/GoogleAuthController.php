@@ -41,13 +41,13 @@ class GoogleAuthController extends Controller
                     'password' => Hash::make($this->RandomString()),
                 ]);
                 Auth::login($new_user);
-                return redirect()->intended('dashboard');
+                return redirect()->intended('english-for-future');
             }
             if (!$user_googleID) {
                 $user_email->update(['google_id' => $google_user->id]);
             }
             Auth::login($user_email);
-            return redirect()->intended('dashboard');
+            return redirect()->intended('english-for-future');
         } catch (\Throwable $th) {
             dd("Something went wrong" . $th->getMessage());
         }

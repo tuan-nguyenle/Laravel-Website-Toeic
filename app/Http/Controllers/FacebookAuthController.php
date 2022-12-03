@@ -40,13 +40,13 @@ class FacebookAuthController extends Controller
                     'password' => Hash::make($this->RandomString()),
                 ]);
                 Auth::login($new_user);
-                return redirect()->intended('dashboard');
+                return redirect()->intended('english-for-future');
             }
             if (!$user_facebookID) {
                 $user_gmail->update(['facebook_id' => $facebook_user->id]);
             }
             Auth::login($user_gmail);
-            return redirect()->intended('dashboard');
+            return redirect()->intended('english-for-future');
         } catch (\Throwable $th) {
             dd("Something went wrong" . $th->getMessage());
         }

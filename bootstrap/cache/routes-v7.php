@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QGNTZdXgy6kNKjsB',
+            '_route' => 'generated::4MqEGEB05jzxILfA',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::y7T45hf8thelZXt9',
+            '_route' => 'generated::7vZRtlBY3C1U0LW6',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wtcjndpL29EVNqYX',
+            '_route' => 'generated::oPfejLKS5lP4632K',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::OMJ7zxCvdCvUpoD1',
+            '_route' => 'generated::4ofKCOqG9jnt2tdo',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::iBvzoqjXB1cXwEKA',
+            '_route' => 'generated::vElo3BrLRzhj1aQD',
           ),
           1 => NULL,
           2 => 
@@ -845,13 +845,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/about-us' => 
+      '/english-for-future/about-us' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'about-us',
+            '_route' => 'home.about-us',
           ),
           1 => NULL,
           2 => 
@@ -865,7 +865,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/news' => 
+      '/english-for-future/news' => 
       array (
         0 => 
         array (
@@ -885,10 +885,30 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/english-for-future/test' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'test.list',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148))|/news/([^/]++)(*:171))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148))|/english\\-for\\-future/news/([^/]++)(*:192))/?$}sDu',
     ),
     3 => 
     array (
@@ -1007,7 +1027,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      171 => 
+      192 => 
       array (
         0 => 
         array (
@@ -1191,7 +1211,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QGNTZdXgy6kNKjsB' => 
+    'generated::4MqEGEB05jzxILfA' => 
     array (
       'methods' => 
       array (
@@ -1208,13 +1228,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003340000000000000000";}";s:4:"hash";s:44:"o8f1Zo8BkvZWC/WX3U0BqP9JuIXIPvBB2kaR3BKWjKI=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003410000000000000000";}";s:4:"hash";s:44:"0+zgrsLlqiiAGFKHVXGvIPveHy1IpaFOiNXBZf5oFvY=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::QGNTZdXgy6kNKjsB',
+        'as' => 'generated::4MqEGEB05jzxILfA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1230,7 +1250,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::y7T45hf8thelZXt9' => 
+    'generated::7vZRtlBY3C1U0LW6' => 
     array (
       'methods' => 
       array (
@@ -1246,13 +1266,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003360000000000000000";}";s:4:"hash";s:44:"8cKrXcYDiKRpBIxzLOsgZ4pnhjxZmRva659KJXU5tP8=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003430000000000000000";}";s:4:"hash";s:44:"tRKQdNaKDcPjBki7qC9jxIx+bwRLQmETUiliKk7WMk0=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::y7T45hf8thelZXt9',
+        'as' => 'generated::7vZRtlBY3C1U0LW6',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1305,7 +1325,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wtcjndpL29EVNqYX' => 
+    'generated::oPfejLKS5lP4632K' => 
     array (
       'methods' => 
       array (
@@ -1325,7 +1345,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::wtcjndpL29EVNqYX',
+        'as' => 'generated::oPfejLKS5lP4632K',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1414,7 +1434,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::OMJ7zxCvdCvUpoD1' => 
+    'generated::4ofKCOqG9jnt2tdo' => 
     array (
       'methods' => 
       array (
@@ -1434,7 +1454,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::OMJ7zxCvdCvUpoD1',
+        'as' => 'generated::4ofKCOqG9jnt2tdo',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1633,7 +1653,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::iBvzoqjXB1cXwEKA' => 
+    'generated::vElo3BrLRzhj1aQD' => 
     array (
       'methods' => 
       array (
@@ -1653,7 +1673,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::iBvzoqjXB1cXwEKA',
+        'as' => 'generated::vElo3BrLRzhj1aQD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2782,7 +2802,7 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\HomeController@HomePage',
         'controller' => 'App\\Http\\Controllers\\HomeController@HomePage',
         'namespace' => NULL,
-        'prefix' => '',
+        'prefix' => 'english-for-future',
         'where' => 
         array (
         ),
@@ -2802,14 +2822,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'about-us' => 
+    'home.about-us' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'about-us',
+      'uri' => 'english-for-future/about-us',
       'action' => 
       array (
         'middleware' => 
@@ -2819,11 +2839,11 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\HomeController@AboutUs',
         'controller' => 'App\\Http\\Controllers\\HomeController@AboutUs',
         'namespace' => NULL,
-        'prefix' => '',
+        'prefix' => 'english-for-future',
         'where' => 
         array (
         ),
-        'as' => 'about-us',
+        'as' => 'home.about-us',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2846,7 +2866,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'news',
+      'uri' => 'english-for-future/news',
       'action' => 
       array (
         'middleware' => 
@@ -2856,7 +2876,7 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\HomeController@ListNews',
         'controller' => 'App\\Http\\Controllers\\HomeController@ListNews',
         'namespace' => NULL,
-        'prefix' => 'news',
+        'prefix' => 'english-for-future/news',
         'where' => 
         array (
         ),
@@ -2883,7 +2903,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'news/{slug}',
+      'uri' => 'english-for-future/news/{slug}',
       'action' => 
       array (
         'middleware' => 
@@ -2893,11 +2913,48 @@ app('router')->setCompiledRoutes(
         'uses' => 'App\\Http\\Controllers\\HomeController@viewNewsDetail',
         'controller' => 'App\\Http\\Controllers\\HomeController@viewNewsDetail',
         'namespace' => NULL,
-        'prefix' => 'news',
+        'prefix' => 'english-for-future/news',
         'where' => 
         array (
         ),
         'as' => 'news.slug',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'test.list' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'english-for-future/test',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\client\\ClientController@index',
+        'controller' => 'App\\Http\\Controllers\\client\\ClientController@index',
+        'namespace' => NULL,
+        'prefix' => 'english-for-future/test',
+        'where' => 
+        array (
+        ),
+        'as' => 'test.list',
       ),
       'fallback' => false,
       'defaults' => 

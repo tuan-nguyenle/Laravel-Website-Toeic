@@ -112,11 +112,11 @@
                         <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
                                 class="nav-link" href="{{ route('home') }}"> Home </a></li>
                         <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
-                                class="nav-link" href="#"> Take Exam </a></li>
-                        <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
                                 class="nav-link" href="{{ route('news') }}"> News </a></li>
                         <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
-                                class="nav-link" href="{{ route('about-us') }}"> About Us </a></li>
+                                class="nav-link" href="{{ route('home.about-us') }}"> About Us </a></li>
+                        <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
+                                class="nav-link" href="{{ route('test.list') }}"> Test Online </a></li>
                         <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;" class="nav-item p-2"><a
                                 class="nav-link" href="#"> Quiz </a></li>
                         <li style="margin-right: 2px;font-size: 18px;font-family:sans-serif;"

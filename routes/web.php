@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\client\ClientController;
 use App\Http\Controllers\Exam\ExamController;
 use App\Http\Controllers\FacebookAuthController;
 use App\Http\Controllers\GoogleAuthController;
@@ -10,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Role\RoleController;
 use App\Http\Controllers\SlideBanner\SlideBannerController;
 use App\Http\Controllers\User\UserController;
+use Illuminate\Support\Str;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -92,19 +95,21 @@ Route::controller(ExamController::class)->prefix('admin/exam')->group(function (
 });
 
 // client layout
-Route::get('/english-for-future', [App\Http\Controllers\HomeController::class, 'HomePage'])->name('home');
-Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'AboutUs'])->name('about-us');
+Route::controller(HomeController::class)->prefix('english-for-future')->group(function () {
+    Route::get('/', 'HomePage')->name('home');
+    Route::get('/about-us', 'AboutUs')->name('home.about-us');
+});
 // news layout
-Route::controller(HomeController::class)->prefix('news')->group(function () {
+Route::controller(HomeController::class)->prefix(Str::slug(config('app.name')) . '/news')->group(function () {
     Route::get('/', 'ListNews')->name('news');
     Route::get('/{slug}', 'viewNewsDetail')->name('news.slug');
 });
-// Route::controller(HomeController::class)->prefix('layout/client')->group(function () {
-//     // Route::post('/update', 'update')->name('client.update');
-//     // Route::post('/add', 'add')->name('client.add');
-//     // Route::post('/update/{id}', 'update')->name('user.update');
-// });
 
+// take Exam
+Route::controller(ClientController::class)->prefix(Str::slug(config('app.name')) . '/test')->group(function () {
+    Route::get('/', 'index')->name('test.list');
+    Route::get('/{test-id}', 'takeExam')->name('test.take-exam');
+});
 // Route::get('/send-email', function () {
 //     $mailData = [
 //         "name" => "Hello Fend",

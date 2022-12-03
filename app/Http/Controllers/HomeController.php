@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Repository\NewsRepository;
 use App\Repository\SlideBannerRepository;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -26,7 +25,7 @@ class HomeController extends Controller
 
     public function ListNews()
     {
-        return view('client.list-news')->with([
+        return view('client.news.list-news')->with([
             'listNews' => $this->newsRepo->getAllNewsActive(),
         ]);
     }
@@ -38,7 +37,7 @@ class HomeController extends Controller
         if ($news == null) {
             abort(404);
         }
-        return view('client.news-detail')->with(compact('news'));
+        return view('client.news.news-detail')->with(compact('news'));
     }
 
     public function AboutUs()

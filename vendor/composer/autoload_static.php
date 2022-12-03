@@ -16,22 +16,22 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
     );
@@ -149,6 +149,7 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         array (
             'Fruitcake\\Cors\\' => 15,
             'Faker\\' => 6,
+            'Facade\\IgnitionContracts\\' => 25,
         ),
         'E' => 
         array (
@@ -164,6 +165,7 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
+            'Diglactic\\Breadcrumbs\\' => 22,
             'Dflydev\\DotAccessData\\' => 22,
             'DeepCopy\\' => 9,
             'Database\\Seeders\\' => 17,
@@ -485,6 +487,10 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
+        'Facade\\IgnitionContracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/facade/ignition-contracts/src',
+        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
@@ -520,6 +526,10 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+        ),
+        'Diglactic\\Breadcrumbs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src',
         ),
         'Dflydev\\DotAccessData\\' => 
         array (
@@ -597,7 +607,9 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'App\\Http\\Controllers\\News\\NewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/News/NewsController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
         'App\\Http\\Controllers\\Role\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Role/RoleController.php',
+        'App\\Http\\Controllers\\SlideBanner\\SlideBannerController' => __DIR__ . '/../..' . '/app/Http/Controllers/SlideBanner/SlideBannerController.php',
         'App\\Http\\Controllers\\User\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/UserController.php',
+        'App\\Http\\Controllers\\client\\ClientController' => __DIR__ . '/../..' . '/app/Http/Controllers/client/ClientController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -626,10 +638,12 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'App\\Repository\\InterfaceNewsRepository' => __DIR__ . '/../..' . '/app/Repository/InterfaceNewsRepository.php',
         'App\\Repository\\InterfaceQuestionsRepository' => __DIR__ . '/../..' . '/app/Repository/InterfaceQuestionsRepository.php',
         'App\\Repository\\InterfaceRoleRepository' => __DIR__ . '/../..' . '/app/Repository/InterfaceRoleRepository.php',
+        'App\\Repository\\InterfaceSlideBannerRepository' => __DIR__ . '/../..' . '/app/Repository/InterfaceSlideBannerRepository.php',
         'App\\Repository\\InterfaceUserRepository' => __DIR__ . '/../..' . '/app/Repository/InterfaceUserRepository.php',
         'App\\Repository\\NewsRepository' => __DIR__ . '/../..' . '/app/Repository/NewsRepository.php',
         'App\\Repository\\QuestionsRepository' => __DIR__ . '/../..' . '/app/Repository/QuestionsRepository.php',
         'App\\Repository\\RoleRepository' => __DIR__ . '/../..' . '/app/Repository/RoleRepository.php',
+        'App\\Repository\\SlideBannerRepository' => __DIR__ . '/../..' . '/app/Repository/SlideBannerRepository.php',
         'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/app/Repository/UserRepository.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
@@ -773,6 +787,15 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'Dflydev\\DotAccessData\\Exception\\InvalidPathException' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Exception/InvalidPathException.php',
         'Dflydev\\DotAccessData\\Exception\\MissingPathException' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Exception/MissingPathException.php',
         'Dflydev\\DotAccessData\\Util' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Util.php',
+        'Diglactic\\Breadcrumbs\\Breadcrumbs' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Breadcrumbs.php',
+        'Diglactic\\Breadcrumbs\\Exceptions\\BaseException' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Exceptions/BaseException.php',
+        'Diglactic\\Breadcrumbs\\Exceptions\\DuplicateBreadcrumbException' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Exceptions/DuplicateBreadcrumbException.php',
+        'Diglactic\\Breadcrumbs\\Exceptions\\InvalidBreadcrumbException' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Exceptions/InvalidBreadcrumbException.php',
+        'Diglactic\\Breadcrumbs\\Exceptions\\UnnamedRouteException' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Exceptions/UnnamedRouteException.php',
+        'Diglactic\\Breadcrumbs\\Exceptions\\ViewNotSetException' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Exceptions/ViewNotSetException.php',
+        'Diglactic\\Breadcrumbs\\Generator' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Generator.php',
+        'Diglactic\\Breadcrumbs\\Manager' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/Manager.php',
+        'Diglactic\\Breadcrumbs\\ServiceProvider' => __DIR__ . '/..' . '/diglactic/laravel-breadcrumbs/src/ServiceProvider.php',
         'Doctrine\\Common\\Cache\\Cache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php',
         'Doctrine\\Common\\Cache\\CacheProvider' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php',
         'Doctrine\\Common\\Cache\\ClearableCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ClearableCache.php',
@@ -1254,6 +1277,12 @@ class ComposerStaticInitdba4ec707118c843ed23fed32084a8c6
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
+        'Facade\\IgnitionContracts\\BaseSolution' => __DIR__ . '/..' . '/facade/ignition-contracts/src/BaseSolution.php',
+        'Facade\\IgnitionContracts\\HasSolutionsForThrowable' => __DIR__ . '/..' . '/facade/ignition-contracts/src/HasSolutionsForThrowable.php',
+        'Facade\\IgnitionContracts\\ProvidesSolution' => __DIR__ . '/..' . '/facade/ignition-contracts/src/ProvidesSolution.php',
+        'Facade\\IgnitionContracts\\RunnableSolution' => __DIR__ . '/..' . '/facade/ignition-contracts/src/RunnableSolution.php',
+        'Facade\\IgnitionContracts\\Solution' => __DIR__ . '/..' . '/facade/ignition-contracts/src/Solution.php',
+        'Facade\\IgnitionContracts\\SolutionProviderRepository' => __DIR__ . '/..' . '/facade/ignition-contracts/src/SolutionProviderRepository.php',
         'Faker\\Calculator\\Ean' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Ean.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Inn.php',
