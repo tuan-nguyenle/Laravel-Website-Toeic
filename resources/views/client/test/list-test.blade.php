@@ -29,7 +29,7 @@
             <ul class="__list-group-item" style="list-style: none;">
                 @foreach ($listExam as $examItem)
                     <li class="list-item">
-                        <a href="#">
+                        <a href="{{ route('test.take-exam', ['testId' => $examItem->id]) }}">
                             <span>
                                 {{ $examItem->id }}
                             </span>

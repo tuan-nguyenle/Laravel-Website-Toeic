@@ -11,6 +11,11 @@ class QuestionsRepository implements InterfaceQuestionsRepository
         return question::all()->where('exam_id', $id);
     }
 
+    public function getCorrectAnswerExamID($id)
+    {
+        return question::where('id', $id)->get(['correct_answer', 'number_for_exam'])->first();
+    }
+
     public function addQuestion($question)
     {
         return question::create([

@@ -108,7 +108,8 @@ Route::controller(HomeController::class)->prefix(Str::slug(config('app.name')) .
 // take Exam
 Route::controller(ClientController::class)->prefix(Str::slug(config('app.name')) . '/test')->group(function () {
     Route::get('/', 'index')->name('test.list');
-    Route::get('/{test-id}', 'takeExam')->name('test.take-exam');
+    Route::get('/{testId}', 'takeExam')->name('test.take-exam');
+    Route::post('/result', 'result')->name('test.result');
 });
 // Route::get('/send-email', function () {
 //     $mailData = [

@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4MqEGEB05jzxILfA',
+            '_route' => 'generated::Rf5JjWPvPok5grgq',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7vZRtlBY3C1U0LW6',
+            '_route' => 'generated::pPLTdPwASOkfiwVA',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::oPfejLKS5lP4632K',
+            '_route' => 'generated::DzAx60FO22F0jiZ7',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4ofKCOqG9jnt2tdo',
+            '_route' => 'generated::uw2vZzzNIuAXoKu5',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vElo3BrLRzhj1aQD',
+            '_route' => 'generated::wJDV2gtf2cPlE3hx',
           ),
           1 => NULL,
           2 => 
@@ -908,7 +908,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148))|/english\\-for\\-future/news/([^/]++)(*:192))/?$}sDu',
+      0 => '{^(?|/password/reset/([^/]++)(*:31)|/admin/(?|user/(?|view/([^/]++)(*:69)|update/([^/]++)(*:91))|news/view(?:/([^/]++))?(*:122)|exam/view/([^/]++)(*:148))|/english\\-for\\-future/(?|news/([^/]++)(*:195)|test/([^/]++)(?|(*:219)|/result(*:234))))/?$}sDu',
     ),
     3 => 
     array (
@@ -1027,7 +1027,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      192 => 
+      195 => 
       array (
         0 => 
         array (
@@ -1047,6 +1047,51 @@ app('router')->setCompiledRoutes(
           3 => NULL,
           4 => false,
           5 => true,
+          6 => NULL,
+        ),
+      ),
+      219 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'test.take-exam',
+          ),
+          1 => 
+          array (
+            0 => 'testId',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      234 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'test.result',
+          ),
+          1 => 
+          array (
+            0 => 'testId',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
           6 => NULL,
         ),
         1 => 
@@ -1211,7 +1256,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4MqEGEB05jzxILfA' => 
+    'generated::Rf5JjWPvPok5grgq' => 
     array (
       'methods' => 
       array (
@@ -1228,13 +1273,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003410000000000000000";}";s:4:"hash";s:44:"0+zgrsLlqiiAGFKHVXGvIPveHy1IpaFOiNXBZf5oFvY=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003430000000000000000";}";s:4:"hash";s:44:"R+z8rhlONnQQ8tTzEdaenKiIQ+/vYHzF3gQDp3aMja4=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::4MqEGEB05jzxILfA',
+        'as' => 'generated::Rf5JjWPvPok5grgq',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1250,7 +1295,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7vZRtlBY3C1U0LW6' => 
+    'generated::pPLTdPwASOkfiwVA' => 
     array (
       'methods' => 
       array (
@@ -1266,13 +1311,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003430000000000000000";}";s:4:"hash";s:44:"tRKQdNaKDcPjBki7qC9jxIx+bwRLQmETUiliKk7WMk0=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003450000000000000000";}";s:4:"hash";s:44:"+dfX5Zp2G/JFxji5gbkhFDSZ/tTvn2GwZ0Mi4zNGhTI=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::7vZRtlBY3C1U0LW6',
+        'as' => 'generated::pPLTdPwASOkfiwVA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1325,7 +1370,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::oPfejLKS5lP4632K' => 
+    'generated::DzAx60FO22F0jiZ7' => 
     array (
       'methods' => 
       array (
@@ -1345,7 +1390,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::oPfejLKS5lP4632K',
+        'as' => 'generated::DzAx60FO22F0jiZ7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1434,7 +1479,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4ofKCOqG9jnt2tdo' => 
+    'generated::uw2vZzzNIuAXoKu5' => 
     array (
       'methods' => 
       array (
@@ -1454,7 +1499,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4ofKCOqG9jnt2tdo',
+        'as' => 'generated::uw2vZzzNIuAXoKu5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1653,7 +1698,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::vElo3BrLRzhj1aQD' => 
+    'generated::wJDV2gtf2cPlE3hx' => 
     array (
       'methods' => 
       array (
@@ -1673,7 +1718,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::vElo3BrLRzhj1aQD',
+        'as' => 'generated::wJDV2gtf2cPlE3hx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2955,6 +3000,79 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'test.list',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'test.take-exam' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'english-for-future/test/{testId}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\client\\ClientController@takeExam',
+        'controller' => 'App\\Http\\Controllers\\client\\ClientController@takeExam',
+        'namespace' => NULL,
+        'prefix' => 'english-for-future/test',
+        'where' => 
+        array (
+        ),
+        'as' => 'test.take-exam',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'test.result' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'english-for-future/test/{testId}/result',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\client\\ClientController@result',
+        'controller' => 'App\\Http\\Controllers\\client\\ClientController@result',
+        'namespace' => NULL,
+        'prefix' => 'english-for-future/test',
+        'where' => 
+        array (
+        ),
+        'as' => 'test.result',
       ),
       'fallback' => false,
       'defaults' => 
