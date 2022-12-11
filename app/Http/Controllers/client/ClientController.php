@@ -57,7 +57,9 @@ class ClientController extends HomeController
 
     public function result(Request $request)
     {
+        // dd($request->all());
         // print_r($request->answer);
+
         $correctListen = 0;
         $correctReading = 0;
         $answer = collect($request->answer);
@@ -83,6 +85,12 @@ class ClientController extends HomeController
 
         $totalScore = [$scoreListening[($correctListen)], $scoreReading[($correctReading)]];
 
-        return $totalScore;
+        return response([
+            'message' => "Congratulations",
+            'correct_answer' => $correctListen + $correctReading,
+            'listening' => $scoreListening[($correctListen)],
+            'reading' => $scoreReading[($correctReading)],
+            'total' => $totalScore[0] + $totalScore[1],
+        ]);
     }
 }

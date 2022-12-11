@@ -1,5 +1,5 @@
 @php
-$title = 'User Management';
+    $title = 'User Management';
 @endphp
 @extends('layouts.admin.master-admin')
 
