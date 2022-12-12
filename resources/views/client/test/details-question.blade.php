@@ -18,13 +18,13 @@
             <div class="col-5">
                 <figure>
                     @if ($itemP1->image)
-                        <img src="{{ asset('storage/exam/' . $itemP1->image) }}"
+                        <img src="{{ asset('storagepublic/exam/' . $itemP1->image) }}"
                             alt="Part 1: Question {{ $itemP1->number_for_exam }}" width="100%">
                     @endif
                 </figure>
                 <div>
                     @if ($itemP1->audio)
-                        <audio class="audio" data-src="{{ asset('storage/exam/' . $itemP1->audio) }}" controls
+                        <audio class="audio" data-src="{{ asset('storagepublic/exam/' . $itemP1->audio) }}" controls
                             onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                 </div>
