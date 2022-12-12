@@ -5,36 +5,51 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('asset/css/exam.css') }}">
+    <style>
+        .question-label.active strong {
+            background: rgb(0, 174, 255);
+            color: #fff;
+            border: 1px solid;
+        }
+
+        .lead {
+            font-size: 16px;
+            font-family: roboto, sans-serif;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.3;
+            border: 1px solid #dfdfdf;
+            padding: 10px !important;
+            background-color: rgb(222, 222, 222);
+        }
+    </style>
 @stop
 
 @section('content')
     <div class="testReading" id="testReading">
-        <div class="navbar fixed-top navbar-light bg-light">
-            <p>
-                <a href="{{ route('home') }}" id="backhome" style="display: inline;">←
-                    Home</a>
-                <span style="padding-left: 40px;">{{ $infoExam }}</span>
-            </p>
-        </div>
-        <div id="content" class="container-fluid fill">
+        <div id="content" class="container-fluid fill ">
             <form id="submitForm" name="submitForm" method="POST">
                 @csrf
                 {{-- <input type="hidden" name="id" value="{{ $id }}"> --}}
                 <div class="row">
                     <div id="navigation" class="col-md-3">
+                        <hr>
                         <div class="fix-scrolling">
-                            <div class="d-flex justify-content-center pt-3">
-                                <span id="time">2:00:00</span>
+                            <div class="d-flex justify-content-center p-2 border border-primary rounded"
+                                style="background-color: rgb(88, 162, 223)">
+                                <span id="time" style="color: white">2:00:00</span>
                             </div>
-                            <hr class="hr hr-blurry">
-                            <div class="d-flex justify-content-start flex-wrap overflow-scroll" id="list-question">
+                            <div class="d-flex justify-content-start flex-wrap overflow-scroll" id="list-question"
+                                style="background-color: rgba(192, 190, 190, 0.191)">
                                 @include('client.test.list-question')
                             </div>
                             <hr class="hr hr-blurry">
                             <div class="pageing" id="fulltest_page" data-page="1" data-limit="102">
-                                <a href="javascript:void(0)" data-type="-1" class="button_page back">BACK</a>
-                                <a href="javascript:void(0)" class="button_page next" data-type="1">NEXT</a>
-                                <button class="btn btn-danger">Chấm điểm</button>
+                                <a href="javascript:void(0)" data-type="-1"
+                                    class="button_page back bg-danger text-white">PREVIOUS</a>
+                                <a href="javascript:void(0)" class="button_page next text-white"
+                                    style="background-color: rgb(7, 130, 244)" data-type="1">NEXT</a>
+                                <button class="btn btn-success bg-success">NỘP BÀI</button>
                                 {{-- onclick="if (!window.__cfRLUnblockHandlers) return false; return mshoatoeic.send_answer_fulltest()"
                                 data-cf-modified-1ce80f210daa0304f7c52798-="" --}}
                             </div>
@@ -46,7 +61,7 @@
 
                     <!--Nội dung bài test -->
                     <div id="main" class="col-md-9 web-font ">
-                        @include('client.test.list-parts')
+                        {{-- @include('client.test.list-parts') --}}
                         <div class="container" id="fulltest_content">
                             @include('client.test.details-question')
                         </div>
@@ -55,6 +70,9 @@
             </form>
         </div>
     </div>
+
+
+    {{-- phan cham diem --}}
     <div class="modal fade" id="result-modal" tabindex="-1" aria-labelledby="msg" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">

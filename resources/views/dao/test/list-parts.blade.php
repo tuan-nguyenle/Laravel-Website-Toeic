@@ -21,3 +21,5 @@
         <a class="nav-link">Part 7</a>
     </li>
 </ul>
+{{-- list parrt hong xai cai nay--}}
+{{-- cu lam tiep di --}}

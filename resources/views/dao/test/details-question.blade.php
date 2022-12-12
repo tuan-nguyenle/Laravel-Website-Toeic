@@ -1,3 +1,5 @@
+{{--  o chinh giua --}}
+
 @php
     $currentPage = 1;
 @endphp
@@ -11,8 +13,7 @@
 @foreach ($listQuestionP1 as $itemP1)
     <div data-part='1' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
         <p class="lead">
-            Look at the picture and listen to the sentences. Choose the sentence that best describes the
-            picture:
+            Choose the sentence that best describes the picture:
         </p>
         <div class="row">
             <div class="col-5">
@@ -72,8 +73,8 @@
 
 @foreach ($listQuestionP2 as $itemP2)
     <div data-part='2' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
-            Listen to the question and the three responses. Choose the response that best answers the question:
+        <p class="lead" style="background-color: aliceblue">
+        Choose the response that best answers the question:
         </p>
         <div class="row">
             <div class="col-5">
@@ -122,7 +123,7 @@
 
 @for ($i = 0; $i < 39; $i += 3)
     <div data-part='3' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Listen to the dialogue. Then read each question and choose the best answer:
         </p>
         <div class="row">
@@ -203,7 +204,7 @@
 
 @for ($i = 0; $i < 30; $i += 3)
     <div data-part='4' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Listen to the talk. Then read each question and choose the best answer:
         </p>
         <div class="row">
@@ -283,7 +284,7 @@
 
 @foreach ($listQuestionP5 as $itemP5)
     <div data-part='5' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Choose the word that best completes the sentence:
         </p>
         <div class="row">
@@ -348,7 +349,7 @@
 
 @for ($i = 0; $i < 16; $i += 4)
     <div data-part='6' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Choose the word or phrase that best completes the blanks:
         </p>
         <div class="row">
@@ -427,7 +428,7 @@
 
 @for ($i = 0; $i < 8; $i += 2)
     <div data-part='7' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Read the passage and choose the correct answer:
         </p>
         <div class="row">
@@ -502,7 +503,7 @@
 
 @for ($i = 0; $i < 9; $i += 3)
     <div data-part='7' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Read the passage and choose the correct answer:
         </p>
         <div class="row">
@@ -581,7 +582,7 @@
 
 @for ($i = 0; $i < 12; $i += 4)
     <div data-part='7' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Read the passage and choose the correct answer:
         </p>
         <div class="row">
@@ -661,7 +662,7 @@
 
 @for ($i = 0; $i < 25; $i += 5)
     <div data-part='7' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
-        <p class="lead">
+        <p class="lead" style="background-color: aliceblue">
             Read the passage and choose the correct answer:
         </p>
         <div class="row">

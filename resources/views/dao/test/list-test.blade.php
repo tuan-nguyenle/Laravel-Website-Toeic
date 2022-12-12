@@ -13,7 +13,7 @@
             content: "	\2022";
             width: 4px;
             height: 4px;
-            color: #ff0103;
+            color: #04a6f7;
             top: 16px;
             left: 0;
             display: inline;
