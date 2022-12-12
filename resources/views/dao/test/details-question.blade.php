@@ -13,7 +13,7 @@
 @foreach ($listQuestionP1 as $itemP1)
     <div data-part='1' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
         <p class="lead">
-            Choose the sentence that best describes the picture:
+            Choose the sentence that best describes the picture :
         </p>
         <div class="row">
             <div class="col-5">
