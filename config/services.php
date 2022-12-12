@@ -34,7 +34,8 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRECT'),
-        'redirect' => 'http://localhost/google/call-back',
+        // 'redirect' => 'http://localhost/google/call-back',
+        'redirect' => 'http://web-toeic-for-future.herokuapp.com/call-back',
     ],
 
     'facebook' => [
