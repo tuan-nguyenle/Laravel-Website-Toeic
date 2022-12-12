@@ -19,15 +19,14 @@
             <div class="col-5">
                 <figure>
                     @if ($itemP1->image)
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP1->number_for_exam }}" width="100%">
                     @endif
                 </figure>
                 <div>
                     @if ($itemP1->audio)
-                        <audio class="audio"
-                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
-                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio" data-src="{{ asset('asset/Lullaby_-RaufFaik.mp3') }}" controls
+                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                 </div>
             </div>
@@ -81,9 +80,8 @@
             <div class="col-5">
                 <div>
                     @if ($itemP2->audio)
-                        <audio class="audio"
-                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
-                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio" data-src="{{ asset('asset/Lullaby_ - Rauf Faik.mp3') }}" controls
+                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                 </div>
             </div>
@@ -133,9 +131,8 @@
                 <div class="col-5">
                     @if ($itemP3->audio)
                         <div>
-                            <audio class="audio"
-                                data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
-                                controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                            <audio class="audio" data-src="{{ asset('asset/Lullaby_ - Rauf Faik.mp3') }}" controls
+                                onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                         </div>
                     @endif
                     @if ($itemP3->paragraph)
@@ -144,7 +141,7 @@
                         </div>
                     @endif
                     @if ($itemP3->image)
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP3->number_for_exam }}" width="100%">
                     @endif
                 </div>
@@ -214,13 +211,12 @@
             @foreach ($listQuestionP4->slice($i, 3) as $itemP4)
                 <div class="col-5">
                     @if ($itemP4->image)
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP4->number_for_exam }}" width="100%">
                     @endif
                     @if ($itemP4->audio)
-                        <audio class="audio"
-                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
-                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio" data-src="{{ asset('asset/Lullaby_ - Rauf Faik.mp3') }}" controls
+                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                     @if ($itemP4->paragraph)
                         <div class="d-flex justify-content-center mt-4" style="max-width: 100%;max-height: 100%;">
@@ -367,7 +363,7 @@
                     @endif
                     @if ($itemP6->image)
                         <div class="d-flex justify-content-center mt-4" style="max-width: 100%;max-height: 100%;">
-                            <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                            <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                                 alt="Part 1: Question {{ $itemP6->number_for_exam }}" width="100%">
                         </div>
                     @endif
@@ -439,7 +435,7 @@
             @foreach ($listQuestionP7_2->slice($i, 2) as $itemP7_2)
                 <div class="col-5">
                     @if ($itemP7_2->image)
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP7_2->number_for_exam }}" width="100%">
                     @endif
                     @if ($itemP7_2->paragraph)
@@ -514,7 +510,7 @@
             @foreach ($listQuestionP7_3->slice($i, 3) as $itemP7_3)
                 @if ($itemP7_3->image)
                     <div class="col-5">
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP7_3->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_3->paragraph)
@@ -593,7 +589,7 @@
             @foreach ($listQuestionP7_4->slice($i, 4) as $itemP7_4)
                 @if ($itemP7_4->image)
                     <div class="col-5">
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP7_4->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_4->paragraph)
@@ -673,7 +669,7 @@
             @foreach ($listQuestionP7_5->slice($i, 5) as $itemP7_5)
                 @if ($itemP7_5->image)
                     <div class="col-5">
-                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
+                        <img src="https://instagram.fsgn2-5.fna.fbcdn.net/v/t51.2885-15/317656921_5982983051788742_7211098049808954019_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.fsgn2-5.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Hw8iadvpWAgAX9ZVqto&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjk4NDMyMDI5MzkzOTk4Nzk1OQ%3D%3D.2-ccb7-5&oh=00_AfAFPZRiqWBKNIDKbjPInoLfLsGTnspVG8JCxoFhMZlLqw&oe=639CB572&_nc_sid=30a2ef"
                             alt="Part 1: Question {{ $itemP7_5->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_5->paragraph)
