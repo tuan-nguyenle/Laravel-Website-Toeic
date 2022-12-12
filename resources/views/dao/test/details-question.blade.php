@@ -19,14 +19,15 @@
             <div class="col-5">
                 <figure>
                     @if ($itemP1->image)
-                        <img src="{{ asset('storage/exam/' . $itemP1->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP1->number_for_exam }}" width="100%">
                     @endif
                 </figure>
                 <div>
                     @if ($itemP1->audio)
-                        <audio class="audio" data-src="{{ asset('storage/exam/' . $itemP1->audio) }}" controls
-                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio"
+                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
+                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                 </div>
             </div>
@@ -74,14 +75,15 @@
 @foreach ($listQuestionP2 as $itemP2)
     <div data-part='2' class="question fullest_page_{{ $currentPage }}" data-page="{{ $currentPage }}">
         <p class="lead" style="background-color: aliceblue">
-        Choose the response that best answers the question:
+            Choose the response that best answers the question:
         </p>
         <div class="row">
             <div class="col-5">
                 <div>
                     @if ($itemP2->audio)
-                        <audio class="audio" data-src="{{ asset('storage/exam/' . $itemP2->audio) }}" controls
-                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio"
+                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
+                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                 </div>
             </div>
@@ -131,8 +133,9 @@
                 <div class="col-5">
                     @if ($itemP3->audio)
                         <div>
-                            <audio class="audio" data-src="{{ asset('storage/exam/' . $itemP3->audio) }}" controls
-                                onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                            <audio class="audio"
+                                data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
+                                controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                         </div>
                     @endif
                     @if ($itemP3->paragraph)
@@ -141,7 +144,7 @@
                         </div>
                     @endif
                     @if ($itemP3->image)
-                        <img src="{{ asset('storage/exam/' . $itemP3->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP3->number_for_exam }}" width="100%">
                     @endif
                 </div>
@@ -211,12 +214,13 @@
             @foreach ($listQuestionP4->slice($i, 3) as $itemP4)
                 <div class="col-5">
                     @if ($itemP4->image)
-                        <img src="{{ asset('storage/exam/' . $itemP4->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP4->number_for_exam }}" width="100%">
                     @endif
                     @if ($itemP4->audio)
-                        <audio class="audio" data-src="{{ asset('storage/exam/' . $itemP4->audio) }}" controls
-                            onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
+                        <audio class="audio"
+                            data-src="https://drive.google.com/file/d/1gyMnchltEICLIBoyOVBkl_okwXwvbubI/view?usp=share_link"
+                            controls onplay="stopEvent(this)" controlsList="nodownload noplaybackrate"></audio>
                     @endif
                     @if ($itemP4->paragraph)
                         <div class="d-flex justify-content-center mt-4" style="max-width: 100%;max-height: 100%;">
@@ -363,7 +367,7 @@
                     @endif
                     @if ($itemP6->image)
                         <div class="d-flex justify-content-center mt-4" style="max-width: 100%;max-height: 100%;">
-                            <img src="{{ asset('storage/exam/' . $itemP6->image) }}"
+                            <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                                 alt="Part 1: Question {{ $itemP6->number_for_exam }}" width="100%">
                         </div>
                     @endif
@@ -435,7 +439,7 @@
             @foreach ($listQuestionP7_2->slice($i, 2) as $itemP7_2)
                 <div class="col-5">
                     @if ($itemP7_2->image)
-                        <img src="{{ asset('storage/exam/' . $itemP7_2->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP7_2->number_for_exam }}" width="100%">
                     @endif
                     @if ($itemP7_2->paragraph)
@@ -510,7 +514,7 @@
             @foreach ($listQuestionP7_3->slice($i, 3) as $itemP7_3)
                 @if ($itemP7_3->image)
                     <div class="col-5">
-                        <img src="{{ asset('storage/exam/' . $itemP7_3->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP7_3->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_3->paragraph)
@@ -589,7 +593,7 @@
             @foreach ($listQuestionP7_4->slice($i, 4) as $itemP7_4)
                 @if ($itemP7_4->image)
                     <div class="col-5">
-                        <img src="{{ asset('storage/exam/' . $itemP7_4->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP7_4->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_4->paragraph)
@@ -669,7 +673,7 @@
             @foreach ($listQuestionP7_5->slice($i, 5) as $itemP7_5)
                 @if ($itemP7_5->image)
                     <div class="col-5">
-                        <img src="{{ asset('storage/exam/' . $itemP7_5->image) }}"
+                        <img src="https://drive.google.com/file/d/1U40qFsUEvzGMfOMrnlhb2xTh5IUS1H0a/view?usp=share_link"
                             alt="Part 1: Question {{ $itemP7_5->number_for_exam }}" width="100%">
                     </div>
                 @elseif ($itemP7_5->paragraph)
