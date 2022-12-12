@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7hyNyoaLL0dbnZeX',
+            '_route' => 'generated::MKshtaZnGJNQbmKy',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gUa7HacOJFynjAmX',
+            '_route' => 'generated::uzFLbs5KrfqKbWKf',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XNOj0uO1OIRVYzGI',
+            '_route' => 'generated::RPKBiWgMkjrpxAq0',
           ),
           1 => NULL,
           2 => 
@@ -214,7 +214,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::zkLEVyr6IhtzxjqO',
+            '_route' => 'generated::9UQLTvX4OFmLuo3W',
           ),
           1 => NULL,
           2 => 
@@ -305,7 +305,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CrYrYKj58GwuUh2p',
+            '_route' => 'generated::hlpNazh601sigQvB',
           ),
           1 => NULL,
           2 => 
@@ -428,6 +428,26 @@ app('router')->setCompiledRoutes(
           2 => 
           array (
             'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/view-history' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'view-history',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -905,6 +925,45 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/test-toeic' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'test-toeic',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/test-toeic-result' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'test-toeic-result',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
@@ -1255,7 +1314,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7hyNyoaLL0dbnZeX' => 
+    'generated::MKshtaZnGJNQbmKy' => 
     array (
       'methods' => 
       array (
@@ -1272,13 +1331,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003430000000000000000";}";s:4:"hash";s:44:"R+z8rhlONnQQ8tTzEdaenKiIQ+/vYHzF3gQDp3aMja4=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003450000000000000000";}";s:4:"hash";s:44:"qxVLuHoaMASAkKFGKiiuI3r4MiiyPHirLpeihi+M8Fw=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::7hyNyoaLL0dbnZeX',
+        'as' => 'generated::MKshtaZnGJNQbmKy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1294,7 +1353,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gUa7HacOJFynjAmX' => 
+    'generated::uzFLbs5KrfqKbWKf' => 
     array (
       'methods' => 
       array (
@@ -1310,13 +1369,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003450000000000000000";}";s:4:"hash";s:44:"+dfX5Zp2G/JFxji5gbkhFDSZ/tTvn2GwZ0Mi4zNGhTI=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003470000000000000000";}";s:4:"hash";s:44:"2sL1ghlroOXlkz4MF6XTr14grtP+f04mcuQjQAvfFXY=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::gUa7HacOJFynjAmX',
+        'as' => 'generated::uzFLbs5KrfqKbWKf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1369,7 +1428,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XNOj0uO1OIRVYzGI' => 
+    'generated::RPKBiWgMkjrpxAq0' => 
     array (
       'methods' => 
       array (
@@ -1389,7 +1448,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XNOj0uO1OIRVYzGI',
+        'as' => 'generated::RPKBiWgMkjrpxAq0',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1478,7 +1537,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::zkLEVyr6IhtzxjqO' => 
+    'generated::9UQLTvX4OFmLuo3W' => 
     array (
       'methods' => 
       array (
@@ -1498,7 +1557,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::zkLEVyr6IhtzxjqO',
+        'as' => 'generated::9UQLTvX4OFmLuo3W',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1697,7 +1756,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::CrYrYKj58GwuUh2p' => 
+    'generated::hlpNazh601sigQvB' => 
     array (
       'methods' => 
       array (
@@ -1717,7 +1776,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::CrYrYKj58GwuUh2p',
+        'as' => 'generated::hlpNazh601sigQvB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1937,6 +1996,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'update-password',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'view-history' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'view-history',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ProfileController@viewHistory',
+        'controller' => 'App\\Http\\Controllers\\ProfileController@viewHistory',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'view-history',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3072,6 +3168,79 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'test.result',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'test-toeic' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'test-toeic',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@DaoTongToeic',
+        'controller' => 'App\\Http\\Controllers\\HomeController@DaoTongToeic',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'test-toeic',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'test-toeic-result' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'test-toeic-result',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\HomeController@DaoTongToeicResult',
+        'controller' => 'App\\Http\\Controllers\\HomeController@DaoTongToeicResult',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'test-toeic-result',
       ),
       'fallback' => false,
       'defaults' => 

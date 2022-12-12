@@ -5,17 +5,21 @@ namespace App\Http\Controllers\client;
 use App\Http\Controllers\HomeController;
 use App\Repository\InterfaceExamsRepository;
 use App\Repository\InterfaceQuestionsRepository;
+use App\Repository\InterfaceResultRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ClientController extends HomeController
 {
     protected $examRepo;
     protected $questionRepo;
-    public function __construct(InterfaceExamsRepository $examsRepository, InterfaceQuestionsRepository $questionRepo)
+    protected $resultRepo;
+    public function __construct(InterfaceExamsRepository $examsRepository, InterfaceQuestionsRepository $questionRepo, InterfaceResultRepository $resultRepository)
     {
         $this->middleware('auth');
         $this->examRepo = $examsRepository;
         $this->questionRepo = $questionRepo;
+        $this->resultRepo = $resultRepository;
     }
 
     public function index()
@@ -57,9 +61,6 @@ class ClientController extends HomeController
 
     public function result(Request $request)
     {
-        // dd($request->all());
-        // print_r($request->answer);
-
         $correctListen = 0;
         $correctReading = 0;
         $answer = collect($request->answer);
@@ -83,14 +84,19 @@ class ClientController extends HomeController
             '0', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '60', '65', '70', '80', '85', '90', '95', '100', '110', '115', '120', '125', '130', '140', '145', '150', '160', '165', '170', '175', '180', '190', '195', '200', '210', '215', '220', '225', '230', '235', '240', '250', '255', '260', '265', '270', '280', '285', '290', '300', '305', '310', '320', '325', '330', '335', '340', '350', '355', '360', '365', '370', '380', '385', '390', '395', '400', '405', '410', '415', '420', '425', '430', '435', '445', '450', '455', '465', '470', '480', '485', '490', '495', '495', '495', '495'
         ];
 
-        $totalScore = [$scoreListening[($correctListen)], $scoreReading[($correctReading)]];
+        $markListening = $scoreListening[$correctListen];
+        $markReading = $scoreReading[$correctReading];
+
+        // return [$correctListen, $correctReading, $markListening + $markReading, Auth::id(), $request->id];
+
+        $this->resultRepo->saveResult([$correctListen, $correctReading, $markListening + $markReading, Auth::id(), $request->id]);
 
         return response([
             'message' => "Congratulations",
             'correct_answer' => $correctListen + $correctReading,
             'listening' => $scoreListening[($correctListen)],
             'reading' => $scoreReading[($correctReading)],
-            'total' => $totalScore[0] + $totalScore[1],
+            'total' => $markListening + $markReading,
         ]);
     }
 }

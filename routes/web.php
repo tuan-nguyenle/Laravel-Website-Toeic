@@ -40,6 +40,9 @@ Route::post('/update-avatar', [App\Http\Controllers\ProfileController::class, 'u
 Route::get('/change-password', [App\Http\Controllers\ProfileController::class, 'changePassword'])->name('change-password');
 Route::post('/update-password', [App\Http\Controllers\ProfileController::class, 'updatePassword'])->name('update-password');
 
+// view history
+Route::get('/view-history', [App\Http\Controllers\ProfileController::class, 'viewHistory'])->name('view-history');
+
 // method Login
 Route::prefix('google')->name('google.')->group(function () {
     Route::get('auth', [GoogleAuthController::class, 'redirect'])->name('auth');
@@ -121,3 +124,8 @@ Route::controller(ClientController::class)->prefix(Str::slug(config('app.name'))
 
 //     dd("Email sent successfully");
 // });
+
+
+
+Route::get('/test-toeic', [App\Http\Controllers\HomeController::class, 'DaoTongToeic'])->name('test-toeic');
+Route::post('/test-toeic-result', [App\Http\Controllers\HomeController::class, 'DaoTongToeicResult'])->name('test-toeic-result');

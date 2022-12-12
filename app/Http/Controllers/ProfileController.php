@@ -130,4 +130,8 @@ class ProfileController extends Controller
     {
         return view('layouts.edit-profile');
     }
+    public function getHistory()
+    {
+        return view('layouts.view-history');
+    }
 }

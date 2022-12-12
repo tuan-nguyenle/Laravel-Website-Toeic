@@ -180,6 +180,14 @@
                             <a class="list-group-item list-group-item-action"
                                 href="{{ route('change-password') }}">{{ __('Change Password') }}</a>
                         @endif
+                        {{-- @if (Route::current()->getName() == 'change-password')
+                            <a class="list-group-item list-group-item-action active"
+                                href="{{ route('change-password') }}">{{ __('Change Password') }}</a>
+                        @else
+                            <a class="list-group-item list-group-item-action"
+                                href="{{ route('change-password') }}">{{ __('Change Password') }}</a>
+                        @endif --}}
+
                     </div>
                 </div>
                 <div class="col-md-9">

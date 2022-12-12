@@ -126,6 +126,7 @@
                     contentType: false,
                     processData: false,
                     success: function(data) {
+                        console.log(data);
                         $("#msg").html(data.message);
                         $("#scoreListening").html(data.listening);
                         $("#scoreReading").html(data.reading);

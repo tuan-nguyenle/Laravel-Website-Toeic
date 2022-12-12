@@ -11,7 +11,9 @@ use App\Repository\NewsRepository;
 use App\Repository\RoleRepository;
 use App\Repository\UserRepository;
 use App\Repository\ExamsRepository;
+use App\Repository\InterfaceResultRepository;
 use App\Repository\QuestionsRepository;
+use App\Repository\ResultRepository;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
@@ -30,6 +32,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(InterfaceExamsRepository::class, ExamsRepository::class);
         $this->app->bind(InterfaceQuestionsRepository::class, QuestionsRepository::class);
         $this->app->bind(InterfaceSlideBannerRepository::class, SlideBannerRepository::class);
+        $this->app->bind(InterfaceResultRepository::class, ResultRepository::class);
     }
 
     /**
